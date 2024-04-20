@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Starter</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+</head>
+<body>
+    <div class="flexbox-row column-full">
+        <div class="flexbox-column pad-30 column-half" id="settings-column">
+            <h1 class="mbt-10">CSS Starter Script</h1>
+            <p>Use this page to generate a starter CSS file for a website.</p>
+            <p>You can find the documentation for the generated CSS classes <a href="docs/index.html" class="a">here.</a></p>
+            <h2>Choose the parts you want</h2>
+            <div id="part-selector-list" class="flexbox-column">
+                <div class="flexbox-column jcc mbt-10 css-part" data-checked="true">
+                    <div class="flexbox-row aic">
+                        <input type="checkbox" name="css-part-layout" id="css-part-layout" class="css-part-checkbox" checked>
+                        <label for="css-part-layout">Layout</label>
+                    </div>
+                    <div class="css-part-description">
+                        <p>
+                            Includes classes for manipulating a flexbox layout. Find the docs for the flexbox classes <a href="" class="a">here.</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="flexbox-column jcc mbt-10 css-part" data-checked="true">
+                    <div class="flexbox-row aic">
+                        <input type="checkbox" name="css-part-animations" id="css-part-animations" class="css-part-checkbox" checked>
+                        <label for="css-part-animations">Animations</label>
+                    </div>
+                    <div class="css-part-description">
+                        <p>
+                            Includes classes for animations for -
+                        </p>
+                        <ul class="mt-10">
+                            <li>Buttons</li>
+                            <li>Loaders</li>
+                            <li>Spinners</li>
+                            <li>Progress Bars</li>
+                        </ul>
+                        <p>Find the docs for the animation classes <a href="" class="a">here.</a></p>
+                    </div>
+                </div>
+                <div class="flexbox-column jcc mbt-10 css-part" data-checked="true">
+                    <div class="flexbox-row aic">
+                        <input type="checkbox" name="css-part-inputs" id="css-part-inputs" class="css-part-checkbox" checked>
+                        <label for="css-part-inputs">Inputs</label>
+                    </div>
+                    <div class="css-part-description">
+                        <p>
+                            Includes classes for applying default styling to all types of inputs. Find the docs for input classes <a href="" class="a">here.</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="flexbox-column jcc mbt-10 css-part" data-checked="true">
+                    <div class="flexbox-row aic">
+                        <input type="checkbox" name="css-part-color-scheme" id="css-part-color-scheme" class="css-part-checkbox" checked>
+                        <label for="css-part-color-scheme">Color Scheme</label>
+                    </div>
+                </div>
+                <div class="flexbox-column jcc mbt-10 css-part" data-checked="true">
+                    <div class="flexbox-row aic">
+                        <input type="checkbox" name="css-part-components" id="css-part-components" class="css-part-checkbox" checked>
+                        <label for="css-part-components">Components</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flexbox-column pad-30 column-half">
+            <div class="flexbox-row mt-10">
+                <button id="copy-css" class="space-lr">Copy</button>
+                <button id="download-css">Download</button>
+            </div>
+            <pre style="max-width: 100%; overflow-x: auto; margin: 0;">
+                <code id="css-preview" class="pad-20 language-css">
+:root {
+    box-sizing: border-box;
+}
+                </code>
+            </pre>
+        </div>
+    </div>
+    <script>
+        hljs.highlightElement(document.querySelector('#css-preview'));
+    </script>
+    <script src="js/checkbox.js"></script>
+    <script src="js/css-starter.js"></script>
+</body>
+</html>
