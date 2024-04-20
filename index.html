@@ -18,7 +18,7 @@
         <div class="flexbox-column pad-30 column-half" id="settings-column">
             <h1 class="mbt-10">CSS Starter Script</h1>
             <p>Use this page to generate a starter CSS file for a website.</p>
-            <p>You can find the documentation for the generated CSS classes <a href="docs/index.html" class="a">here.</a></p>
+            <p>You can find the documentation for all included CSS classes <a href="docs/index.html" class="a">here.</a></p>
             <h2>Choose the parts you want</h2>
             <div id="part-selector-list" class="flexbox-column">
                 <div class="flexbox-column jcc mbt-10 css-part" data-checked="true">
@@ -48,6 +48,9 @@
                             <li>Progress Bars</li>
                         </ul>
                         <p>Find the docs for the animation classes <a href="" class="a">here.</a></p>
+                        <details class="mt-10">
+                            <summary>Examples</summary>
+                        </details>
                     </div>
                 </div>
                 <div class="flexbox-column jcc mbt-10 css-part" data-checked="true">
@@ -57,8 +60,11 @@
                     </div>
                     <div class="css-part-description">
                         <p>
-                            Includes classes for applying default styling to all types of inputs. Find the docs for input classes <a href="" class="a">here.</a>
+                            Includes default styling to all types of inputs. Find the docs for input styles <a href="" class="a">here.</a>
                         </p>
+                        <details class="mt-10">
+                            <summary>Examples</summary>
+                        </details>
                     </div>
                 </div>
                 <div class="flexbox-column jcc mbt-10 css-part" data-checked="true">
@@ -66,11 +72,31 @@
                         <input type="checkbox" name="css-part-color-scheme" id="css-part-color-scheme" class="css-part-checkbox" checked>
                         <label for="css-part-color-scheme">Color Scheme</label>
                     </div>
+                    <div class="css-part-description">
+                        <p>
+                            Includes CSS variables for defining a color scheme. Supports both light and dark modes. Find the docs for the color scheme variables
+                            <a href="" class="a">here.</a>
+                        </p>
+                    </div>
                 </div>
                 <div class="flexbox-column jcc mbt-10 css-part" data-checked="true">
                     <div class="flexbox-row aic">
                         <input type="checkbox" name="css-part-components" id="css-part-components" class="css-part-checkbox" checked>
                         <label for="css-part-components">Components</label>
+                    </div>
+                    <div class="css-part-description">
+                        <p>
+                            Includes classes for the following components -
+                        </p>
+                        <ul>
+                            <li>Messages (error, warning, success)</li>
+                            <li>Popups</li>
+                            <li>Error list</li>
+                        </ul>
+                        <p>Find the docs for the component classes <a href="" class="a">here.</a></p>
+                        <details class="mt-10">
+                            <summary>Examples</summary>
+                        </details>
                     </div>
                 </div>
             </div>

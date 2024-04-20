@@ -78,7 +78,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--background-color);
+    background-color: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -580,6 +580,10 @@ tbody tr:hover {
     base styles
 */
 
+summary {
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
     color: var(--default-font-color);
@@ -742,9 +746,20 @@ a.a {
 }
 
 .css-part[data-checked="true"] {
-    /*background-color: var(--accent-light-4);*/
     border-color: var(--accent-light-1);
     border-width: 3px;
+}
+
+.css-part p,
+.css-part ul,
+.css-part a {
+    transition: color ease 0.2s;
+}
+
+.css-part[data-checked="false"] p,
+.css-part[data-checked="false"] ul,
+.css-part[data-checked="false"] a {
+    color: var(--muted-font-color);
 }
 
 .css-part label {
@@ -785,5 +800,7 @@ a.a {
 }
 
 .css-part-description {
-    margin-left: 50px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
